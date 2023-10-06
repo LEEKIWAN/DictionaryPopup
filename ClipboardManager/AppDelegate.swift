@@ -6,15 +6,30 @@
 //
 
 import Cocoa
+import Settings
 
 @main
 class AppDelegate: NSObject, NSApplicationDelegate {
 
+    private lazy var panes: [SettingsPane] = [
+        ViewController()
+    ]
+
     
+    private lazy var settingsWindowController = SettingsWindowController(
+        panes: panes,
+        style: .toolbarItems,
+        animated: true,
+        hidesToolbarForSingleItem: true
+    )
 
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         // Insert code here to initialize your application
+        
+        print("Hello")
+        
+        settingsWindowController.show()
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {
@@ -25,6 +40,9 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         return true
     }
 
+
+    
+    
 
 }
 

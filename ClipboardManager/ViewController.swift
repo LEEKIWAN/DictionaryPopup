@@ -6,13 +6,37 @@
 //
 
 import Cocoa
+import KeyboardShortcuts
+import Settings
 
-class ViewController: NSViewController {
+class ViewController: NSViewController, SettingsPane {
 
+    let paneIdentifier = Settings.PaneIdentifier.general
+    let paneTitle = "General"
+    let toolbarItemIcon = NSImage(systemSymbolName: "gearshape", accessibilityDescription: "General settings")!
+
+    
+    override var nibName: NSNib.Name? { "Main" }
+    
+    @IBOutlet weak var popupContainerView: NSView!
+    @IBOutlet weak var nextContainerView: NSView!
+    
+    
+    let popupRecorder = KeyboardShortcuts.RecorderCocoa(for: .popup)
+    
+    let nextPinboardRecorder = KeyboardShortcuts.RecorderCocoa(for: .nextPinboard)
+    let pevPinboardRecorder = KeyboardShortcuts.RecorderCocoa(for: .prevPinboard)
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        popupContainerView.addSubview(popupRecorder)
+        nextContainerView.addSubview(nextPinboardRecorder)
+    }
+    
+    override func viewDidLayout() {
+        super.viewDidLayout()
+        popupRecorder.frame = popupContainerView.bounds
+        nextPinboardRecorder.frame = nextContainerView.bounds
     }
 
     override var representedObject: Any? {
@@ -22,5 +46,6 @@ class ViewController: NSViewController {
     }
 
 
+    
 }
 
