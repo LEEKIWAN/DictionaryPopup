@@ -13,5 +13,7 @@ extension Settings.PaneIdentifier {
     static let shortcut = Self("shortcut")
     static let rule = Self("rule")
     static let icloudSync = Self("icloudSync")
+    
+    static let advanced = Self("advanced")
 }
 

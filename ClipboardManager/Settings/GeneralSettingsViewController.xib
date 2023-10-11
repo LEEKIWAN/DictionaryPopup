@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="22154" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="22154"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="GeneralSettingsViewController" customModule="ClipboardManager" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="VUb-JW-HPD" id="iFh-VN-6U0"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView translatesAutoresizingMaskIntoConstraints="NO" id="VUb-JW-HPD">
+            <rect key="frame" x="0.0" y="0.0" width="729" height="677"/>
+            <subviews>
+                <gridView xPlacement="leading" yPlacement="center" rowAlignment="none" columnSpacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Tp2-Fr-Uef">
+                    <rect key="frame" x="30" y="406" width="388" height="251"/>
+                    <rows>
+                        <gridRow yPlacement="center" bottomPadding="20" id="zgz-DU-38o"/>
+                        <gridRow yPlacement="top" id="jX0-nn-vH6"/>
+                        <gridRow bottomPadding="20" id="vqz-G3-TWF"/>
+                        <gridRow yPlacement="top" id="fSD-vr-Do6"/>
+                        <gridRow bottomPadding="20" id="pD7-bR-huc"/>
+                        <gridRow bottomPadding="20" id="Xd1-qk-spy"/>
+                        <gridRow id="GQr-qy-7Lk"/>
+                    </rows>
+                    <columns>
+                        <gridColumn xPlacement="trailing" id="Pyz-QQ-GgL"/>
+                        <gridColumn xPlacement="leading" id="jWF-yJ-rVU"/>
+                    </columns>
+                    <gridCells>
+                        <gridCell row="zgz-DU-38o" column="Pyz-QQ-GgL" id="BHo-d6-A6W">
+                            <textField key="contentView" focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="4OK-Zk-B9m">
+                                <rect key="frame" x="58" y="235" width="31" height="16"/>
+                                <textFieldCell key="cell" lineBreakMode="truncatingTail" alignment="right" title="시동:" id="Xlj-AL-fzn">
+                                    <font key="font" usesAppearanceFont="YES"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                        </gridCell>
+                        <gridCell row="zgz-DU-38o" column="jWF-yJ-rVU" id="xv5-cT-xoF">
+                            <button key="contentView" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="zWx-Kp-YvO">
+                                <rect key="frame" x="95" y="234" width="164" height="18"/>
+                                <buttonCell key="cell" type="check" title="시스템 시작 시 Paste 켜기" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="bO6-as-BRZ">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                            </button>
+                        </gridCell>
+                        <gridCell row="jX0-nn-vH6" column="Pyz-QQ-GgL" id="S7S-80-7ve">
+                            <textField key="contentView" focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="n62-YJ-Fzn">
+                                <rect key="frame" x="58" y="193" width="31" height="16"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" alignment="right" title="통합:" id="gwk-nh-hR6">
+                                    <font key="font" usesAppearanceFont="YES"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                        </gridCell>
+                        <gridCell row="jX0-nn-vH6" column="jWF-yJ-rVU" id="ghY-nf-iBa">
+                            <customView key="contentView" translatesAutoresizingMaskIntoConstraints="NO" id="xC3-ca-kfa">
+                                <rect key="frame" x="97" y="174" width="291" height="35"/>
+                                <subviews>
+                                    <stackView distribution="fill" orientation="vertical" alignment="leading" spacing="4" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AD6-Th-P4G">
+                                        <rect key="frame" x="0.0" y="0.0" width="291" height="35"/>
+                                        <subviews>
+                                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="n2D-ZS-Kg6">
+                                                <rect key="frame" x="-2" y="18" width="137" height="18"/>
+                                                <buttonCell key="cell" type="check" title="Direct Paste 활성화" bezelStyle="regularSquare" imagePosition="left" inset="2" id="Gir-Sw-6et">
+                                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                                    <font key="font" metaFont="system"/>
+                                                </buttonCell>
+                                            </button>
+                                            <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="swN-p6-Is6">
+                                                <rect key="frame" x="-2" y="0.0" width="295" height="15"/>
+                                                <textFieldCell key="cell" lineBreakMode="clipping" title="활성화 된 응용프로그램에서 자동으로 스니펫을 붙여넣습니다." id="esw-ut-yYy">
+                                                    <font key="font" metaFont="cellTitle"/>
+                                                    <color key="textColor" name="systemGrayColor" catalog="System" colorSpace="catalog"/>
+                                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                </textFieldCell>
+                                            </textField>
+                                        </subviews>
+                                        <visibilityPriorities>
+                                            <integer value="1000"/>
+                                            <integer value="1000"/>
+                                        </visibilityPriorities>
+                                        <customSpacing>
+                                            <real value="3.4028234663852886e+38"/>
+                                            <real value="3.4028234663852886e+38"/>
+                                        </customSpacing>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="AD6-Th-P4G" firstAttribute="leading" secondItem="xC3-ca-kfa" secondAttribute="leading" id="D2z-Gc-gNs"/>
+                                    <constraint firstAttribute="trailing" secondItem="AD6-Th-P4G" secondAttribute="trailing" id="UZp-Dh-QPv"/>
+                                    <constraint firstAttribute="bottom" secondItem="AD6-Th-P4G" secondAttribute="bottom" id="ck1-Pi-tRj"/>
+                                    <constraint firstItem="AD6-Th-P4G" firstAttribute="top" secondItem="xC3-ca-kfa" secondAttribute="top" id="srJ-yJ-uSg"/>
+                                </constraints>
+                            </customView>
+                        </gridCell>
+                        <gridCell row="vqz-G3-TWF" column="Pyz-QQ-GgL" id="8NW-Vv-EDL"/>
+                        <gridCell row="vqz-G3-TWF" column="jWF-yJ-rVU" id="2cE-lM-qfU">
+                            <button key="contentView" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="oLX-qD-ztb">
+                                <rect key="frame" x="95" y="151" width="221" height="18"/>
+                                <buttonCell key="cell" type="check" title="항상 서식을 제외한 텍스트로 붙여넣기" bezelStyle="regularSquare" imagePosition="left" inset="2" id="ITF-qP-W7m">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                            </button>
+                        </gridCell>
+                        <gridCell row="fSD-vr-Do6" column="Pyz-QQ-GgL" id="s5e-Bb-mUt">
+                            <textField key="contentView" focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="NwD-ra-5h1">
+                                <rect key="frame" x="58" y="110" width="31" height="16"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" alignment="right" title="기타:" id="rQE-Yc-ll7">
+                                    <font key="font" usesAppearanceFont="YES"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                        </gridCell>
+                        <gridCell row="fSD-vr-Do6" column="jWF-yJ-rVU" id="gcd-FH-D5M">
+                            <button key="contentView" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="QJT-Ib-CYg">
+                                <rect key="frame" x="95" y="109" width="112" height="18"/>
+                                <buttonCell key="cell" type="check" title="사운드 효과 켜기" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="ACx-wT-zYR">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                            </button>
+                        </gridCell>
+                        <gridCell row="pD7-bR-huc" column="Pyz-QQ-GgL" id="g1b-pD-dQv"/>
+                        <gridCell row="pD7-bR-huc" column="jWF-yJ-rVU" id="q1m-A7-Ah6">
+                            <button key="contentView" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="NdR-Tk-V5V">
+                                <rect key="frame" x="95" y="87" width="183" height="18"/>
+                                <buttonCell key="cell" type="check" title="메뉴바에서 Paste 아이콘 보기" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="oa6-vl-awq">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                            </button>
+                        </gridCell>
+                        <gridCell row="Xd1-qk-spy" column="Pyz-QQ-GgL" id="xP8-3U-3Ll">
+                            <textField key="contentView" focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Og2-xF-xCi">
+                                <rect key="frame" x="-2" y="46" width="91" height="16"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="히스토리 저장량:" id="Yhx-rD-F3F">
+                                    <font key="font" usesAppearanceFont="YES"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                        </gridCell>
+                        <gridCell row="Xd1-qk-spy" column="jWF-yJ-rVU" id="rS1-KW-ta7"/>
+                        <gridCell row="GQr-qy-7Lk" column="Pyz-QQ-GgL" id="nWB-X3-Npd"/>
+                        <gridCell row="GQr-qy-7Lk" column="jWF-yJ-rVU" id="rhT-o4-pNG">
+                            <button key="contentView" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Ztn-lf-oGg">
+                                <rect key="frame" x="90" y="-7" width="94" height="32"/>
+                                <buttonCell key="cell" type="push" title="내역 지우기" bezelStyle="rounded" alignment="center" borderStyle="border" inset="2" id="I4g-2S-EZa">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                            </button>
+                        </gridCell>
+                    </gridCells>
+                </gridView>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Tp2-Fr-Uef" secondAttribute="bottom" constant="20" id="FPH-v2-U7C"/>
+                <constraint firstItem="Tp2-Fr-Uef" firstAttribute="leading" secondItem="VUb-JW-HPD" secondAttribute="leading" constant="30" id="RNP-oG-R95"/>
+                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Tp2-Fr-Uef" secondAttribute="trailing" constant="30" id="ims-Qa-lqC"/>
+                <constraint firstItem="Tp2-Fr-Uef" firstAttribute="top" secondItem="VUb-JW-HPD" secondAttribute="top" constant="20" id="zLE-MV-tD8"/>
+            </constraints>
+            <point key="canvasLocation" x="361.5" y="434"/>
+        </customView>
+    </objects>
+</document>
