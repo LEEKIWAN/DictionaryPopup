@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="22154" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="22154"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="SettingsViewController" customModule="ClipboardManager" customModuleProvider="target">
+            <connections>
+                <outlet property="popupContainerView" destination="lBn-6E-FQG" id="iED-kp-21S"/>
+                <outlet property="textField" destination="8da-3p-byP" id="xDZ-WA-Ga3"/>
+                <outlet property="window" destination="F0z-JX-Cv5" id="gIp-Ho-8D9"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <window title="환경설정" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" restorable="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="F0z-JX-Cv5">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="196" y="240" width="480" height="270"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="3008" height="1667"/>
+            <view key="contentView" id="se5-gp-TjO">
+                <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                <subviews>
+                    <gridView xPlacement="leading" yPlacement="bottom" rowAlignment="none" translatesAutoresizingMaskIntoConstraints="NO" id="hc1-Bq-xjR">
+                        <rect key="frame" x="103" y="83" width="274" height="104"/>
+                        <rows>
+                            <gridRow yPlacement="center" bottomPadding="10" id="Uf6-HJ-GFc"/>
+                            <gridRow yPlacement="center" bottomPadding="10" id="k8G-Qk-N8F"/>
+                            <gridRow yPlacement="center" bottomPadding="10" id="bRb-JG-MnU"/>
+                        </rows>
+                        <columns>
+                            <gridColumn xPlacement="trailing" id="t0j-x1-v9r"/>
+                            <gridColumn id="RLD-2A-wiF"/>
+                        </columns>
+                        <gridCells>
+                            <gridCell row="Uf6-HJ-GFc" column="t0j-x1-v9r" id="WIn-9j-RVR">
+                                <textField key="contentView" focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="3TB-hp-2QK">
+                                    <rect key="frame" x="21" y="84" width="49" height="16"/>
+                                    <textFieldCell key="cell" lineBreakMode="clipping" alignment="right" title="단축키 : " id="5tF-Rf-b0s">
+                                        <font key="font" usesAppearanceFont="YES"/>
+                                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                    </textFieldCell>
+                                </textField>
+                            </gridCell>
+                            <gridCell row="Uf6-HJ-GFc" column="RLD-2A-wiF" id="80C-Gl-r8P">
+                                <customView key="contentView" translatesAutoresizingMaskIntoConstraints="NO" id="lBn-6E-FQG">
+                                    <rect key="frame" x="74" y="79" width="100" height="25"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="25" id="OGG-ah-CK0"/>
+                                    </constraints>
+                                </customView>
+                            </gridCell>
+                            <gridCell row="k8G-Qk-N8F" column="t0j-x1-v9r" id="4My-t3-UU4">
+                                <textField key="contentView" focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="CDR-mE-wBx">
+                                    <rect key="frame" x="-2" y="45" width="72" height="16"/>
+                                    <textFieldCell key="cell" lineBreakMode="clipping" alignment="right" title="커스텀 주소 :" id="Bek-qo-dcw">
+                                        <font key="font" usesAppearanceFont="YES"/>
+                                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                    </textFieldCell>
+                                </textField>
+                            </gridCell>
+                            <gridCell row="k8G-Qk-N8F" column="RLD-2A-wiF" id="v6Y-Dx-KNp">
+                                <textField key="contentView" focusRingType="none" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="8da-3p-byP">
+                                    <rect key="frame" x="74" y="42" width="200" height="21"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="200" id="pIf-5c-wiC"/>
+                                    </constraints>
+                                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" title="http://m.dic.naver.com/" drawsBackground="YES" id="Q1o-RM-v0I">
+                                        <font key="font" usesAppearanceFont="YES"/>
+                                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                    </textFieldCell>
+                                    <connections>
+                                        <outlet property="delegate" destination="-2" id="3Xr-y4-c1j"/>
+                                    </connections>
+                                </textField>
+                            </gridCell>
+                            <gridCell row="bRb-JG-MnU" column="t0j-x1-v9r" headOfMergedCell="hAD-Le-VUE" xPlacement="center" yPlacement="center" id="hAD-Le-VUE">
+                                <button key="contentView" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Q3i-zE-Eum">
+                                    <rect key="frame" x="63" y="9" width="146" height="18"/>
+                                    <buttonCell key="cell" type="check" title="로그인시 자동으로 실행" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="xJW-01-P4a">
+                                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                        <font key="font" metaFont="system"/>
+                                    </buttonCell>
+                                    <connections>
+                                        <action selector="onAutoStartCheckChanged:" target="-2" id="Fup-Ad-PLF"/>
+                                    </connections>
+                                </button>
+                            </gridCell>
+                            <gridCell row="bRb-JG-MnU" column="RLD-2A-wiF" headOfMergedCell="hAD-Le-VUE" id="SD5-2a-Cd8"/>
+                        </gridCells>
+                    </gridView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="hc1-Bq-xjR" firstAttribute="centerX" secondItem="se5-gp-TjO" secondAttribute="centerX" id="9hK-kl-UWU"/>
+                    <constraint firstItem="hc1-Bq-xjR" firstAttribute="centerY" secondItem="se5-gp-TjO" secondAttribute="centerY" id="b7s-mb-vsH"/>
+                </constraints>
+            </view>
+            <connections>
+                <outlet property="delegate" destination="-2" id="0bl-1N-AYu"/>
+            </connections>
+            <point key="canvasLocation" x="139" y="-46"/>
+        </window>
+    </objects>
+</document>

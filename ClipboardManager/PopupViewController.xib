@@ -679,23 +679,24 @@
                     </menu>
                 </menuItem>
             </items>
+            <point key="canvasLocation" x="-284" y="-462"/>
         </menu>
         <view wantsLayer="YES" id="mR7-t2-xAV">
-            <rect key="frame" x="0.0" y="0.0" width="400" height="800"/>
+            <rect key="frame" x="0.0" y="0.0" width="500" height="800"/>
             <autoresizingMask key="autoresizingMask"/>
             <subviews>
                 <wkWebView wantsLayer="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tvQ-Wf-8wE">
-                    <rect key="frame" x="0.0" y="40" width="400" height="760"/>
+                    <rect key="frame" x="0.0" y="40" width="500" height="760"/>
                     <wkWebViewConfiguration key="configuration">
                         <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
                         <wkPreferences key="preferences"/>
                     </wkWebViewConfiguration>
                 </wkWebView>
                 <customView translatesAutoresizingMaskIntoConstraints="NO" id="vmM-bS-dt3">
-                    <rect key="frame" x="0.0" y="0.0" width="400" height="40"/>
+                    <rect key="frame" x="0.0" y="0.0" width="500" height="40"/>
                     <subviews>
                         <button translatesAutoresizingMaskIntoConstraints="NO" id="qKe-8f-9nV">
-                            <rect key="frame" x="355" y="-5.5" width="40.5" height="52"/>
+                            <rect key="frame" x="455" y="-5.5" width="40.5" height="52"/>
                             <buttonCell key="cell" type="bevel" bezelStyle="rounded" imagePosition="only" alignment="center" inset="2" id="FZi-GQ-vdi">
                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                 <font key="font" metaFont="system"/>
@@ -732,7 +733,7 @@
                             </menu>
                         </comboButton>
                         <button translatesAutoresizingMaskIntoConstraints="NO" id="CxG-dD-BtZ">
-                            <rect key="frame" x="315" y="-5" width="40.5" height="52"/>
+                            <rect key="frame" x="415" y="-5" width="40.5" height="52"/>
                             <buttonCell key="cell" type="bevel" bezelStyle="rounded" imagePosition="only" alignment="center" imageScaling="proportionallyDown" inset="2" id="2aW-7b-jIp">
                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                 <font key="font" metaFont="system"/>

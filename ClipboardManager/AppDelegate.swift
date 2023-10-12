@@ -6,7 +6,7 @@
 //
 
 import Cocoa
-import Settings
+import KeyboardShortcuts
 
 @main
 class AppDelegate: NSObject, NSApplicationDelegate {
@@ -16,19 +16,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     let popover = NSPopover()
     
     let controller: PopupViewController = PopupViewController(nibName: "PopupViewController", bundle: nil)
-    
-    private lazy var panes: [SettingsPane] = [
-        GeneralSettingsViewController(),
-//        ShortcutSettingsViewController()
-    ]
-    
-    
-    private lazy var settingsWindowController = SettingsWindowController(
-        panes: panes,
-        style: .toolbarItems,
-        animated: true,
-        hidesToolbarForSingleItem: true
-    )
+    let settingViewController = SettingsViewController(windowNibName: "SettingsViewController")
     
     
     func applicationWillFinishLaunching(_ notification: Notification) {
@@ -37,6 +25,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         createStatusBarItem()
+        startToObserveShortcuts()
     }
     
     func applicationSupportsSecureRestorableState(_ app: NSApplication) -> Bool {
@@ -48,11 +37,33 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         
     }
     
-    
-    public func presentSettingViewController() {
-        settingsWindowController.show()
+    public func startToObserveShortcuts() {
+        KeyboardShortcuts.onKeyDown(for: .popup) { [unowned self] in
+            showPopupViewController(statusBarItem.button!)
+        }
     }
     
+    // MARK: - Show
+    
+    public func showSettingViewController() {
+        settingViewController.window?.level = .screenSaver
+                
+        if settingViewController.window?.isVisible == false {
+            settingViewController.window?.center()
+        }
+                
+        settingViewController.showWindow(nil)
+    }
+    
+    
+    @objc func showPopupViewController(_ sender: NSButton) {
+        if popover.isShown {
+            popover.close()
+        } else {
+            popover.show(relativeTo: sender.bounds, of: sender as NSView, preferredEdge: .maxY)
+        }
+      
+    }
     
 }
 
@@ -63,22 +74,14 @@ extension AppDelegate {
         statusBarItem.button?.title = "🌯"
         
         statusBarItem.button?.target = self
-        statusBarItem.button?.action = #selector(AppDelegate.cancelBurritoOrder(_:))
-        
-        
+        statusBarItem.button?.action = #selector(AppDelegate.showPopupViewController(_:))
+                
         popover.contentSize = controller.view.frame.size
         popover.behavior = .transient
         popover.animates = true
         popover.contentViewController = controller
-        
-        
     }
-    
-    
-    @objc func cancelBurritoOrder(_ sender: NSButton) {
-        popover.show(relativeTo: sender.bounds, of: sender as NSView, preferredEdge: .maxY)
-      
-    }
+   
     
     
     func close() {

@@ -29,8 +29,6 @@ class PopupViewController: NSViewController {
         if let url = URL(string: url) {
             let request = URLRequest(url: url)
             webView.load(request)
-            
-            print(url)
         }
         print("reloaded")
     }
@@ -51,6 +49,6 @@ class PopupViewController: NSViewController {
     
     @IBAction func onSettingTapped(_ sender: NSButton) {
         guard let appDelegate = (NSApplication.shared.delegate) as? AppDelegate else { return }        
-        appDelegate.presentSettingViewController()
+        appDelegate.showSettingViewController()
     }
 }

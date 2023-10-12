@@ -11,6 +11,7 @@ import SwiftyUserDefaults
 extension DefaultsKeys {
     var dictinoaryType: DefaultsKey<DictionaryType> { .init("dictinoaryType", defaultValue: .naver) }
     
+    var isAutoLaunchEnabled: DefaultsKey<Bool> { .init("isAutoLaunchEnabled", defaultValue: false) }
     
 }
 

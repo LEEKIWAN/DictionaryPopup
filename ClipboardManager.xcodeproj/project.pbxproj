@@ -10,42 +10,31 @@
 		830A54C32AD54A0C00801DB7 /* PopupViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 830A54C22AD54A0C00801DB7 /* PopupViewController.xib */; };
 		833DE34D2ACFA59000B4A546 /* AppDelegate.xib in Resources */ = {isa = PBXBuildFile; fileRef = 833DE34C2ACFA59000B4A546 /* AppDelegate.xib */; };
 		834B03FE2AD53C2C000FC8C9 /* PopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834B03FD2AD53C2C000FC8C9 /* PopupViewController.swift */; };
-		834E15962ACEB670003CE3B8 /* Settings in Frameworks */ = {isa = PBXBuildFile; productRef = 834E15952ACEB670003CE3B8 /* Settings */; };
-		834E15992ACEB687003CE3B8 /* Settings+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834E15982ACEB687003CE3B8 /* Settings+.swift */; };
 		83A532462ACEA2BC003B17EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A532452ACEA2BC003B17EF /* AppDelegate.swift */; };
 		83A5324A2ACEA2BD003B17EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83A532492ACEA2BD003B17EF /* Assets.xcassets */; };
 		83A532562ACEA925003B17EF /* KeyboardShortcuts in Frameworks */ = {isa = PBXBuildFile; productRef = 83A532552ACEA925003B17EF /* KeyboardShortcuts */; };
 		83A532592ACEA952003B17EF /* KeyboardShortcuts+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A532582ACEA952003B17EF /* KeyboardShortcuts+.swift */; };
-		83C8BD602ACFA2B60096EF70 /* GeneralSettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83C8BD5F2ACFA2B60096EF70 /* GeneralSettingsViewController.xib */; };
-		83C8BD622ACFA2DE0096EF70 /* GeneralSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C8BD612ACFA2DE0096EF70 /* GeneralSettingsViewController.swift */; };
-		83EB36232ACFB36B000F29FB /* RuleSettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83EB36222ACFB36B000F29FB /* RuleSettingsViewController.xib */; };
-		83EB36252ACFB375000F29FB /* RuleSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EB36242ACFB375000F29FB /* RuleSettingsViewController.swift */; };
-		83EB36282ACFB386000F29FB /* ShortcutSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EB36262ACFB386000F29FB /* ShortcutSettingsViewController.swift */; };
-		83EB36292ACFB386000F29FB /* ShortcutSettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83EB36272ACFB386000F29FB /* ShortcutSettingsViewController.xib */; };
 		83FC2F502AD640CC00A3065E /* DictionaryType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FC2F4F2AD640CC00A3065E /* DictionaryType.swift */; };
 		83FC2F532AD642CD00A3065E /* SwiftyUserDefaults in Frameworks */ = {isa = PBXBuildFile; productRef = 83FC2F522AD642CD00A3065E /* SwiftyUserDefaults */; };
 		83FC2F562AD642DE00A3065E /* DefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FC2F552AD642DE00A3065E /* DefaultsManager.swift */; };
+		83FC2F772AD7867000A3065E /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FC2F752AD7867000A3065E /* SettingsViewController.swift */; };
+		83FC2F782AD7867000A3065E /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83FC2F762AD7867000A3065E /* SettingsViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		830A54C22AD54A0C00801DB7 /* PopupViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PopupViewController.xib; sourceTree = "<group>"; };
 		833DE34C2ACFA59000B4A546 /* AppDelegate.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AppDelegate.xib; sourceTree = "<group>"; };
 		834B03FD2AD53C2C000FC8C9 /* PopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupViewController.swift; sourceTree = "<group>"; };
-		834E15982ACEB687003CE3B8 /* Settings+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Settings+.swift"; sourceTree = "<group>"; };
 		83A532422ACEA2BC003B17EF /* ClipboardManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClipboardManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83A532452ACEA2BC003B17EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		83A532492ACEA2BD003B17EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		83A5324E2ACEA2BD003B17EF /* ClipboardManager.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ClipboardManager.entitlements; sourceTree = "<group>"; };
 		83A532582ACEA952003B17EF /* KeyboardShortcuts+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "KeyboardShortcuts+.swift"; sourceTree = "<group>"; };
 		83B625792ACFF28800634193 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		83C8BD5F2ACFA2B60096EF70 /* GeneralSettingsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GeneralSettingsViewController.xib; sourceTree = "<group>"; };
-		83C8BD612ACFA2DE0096EF70 /* GeneralSettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneralSettingsViewController.swift; sourceTree = "<group>"; };
-		83EB36222ACFB36B000F29FB /* RuleSettingsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RuleSettingsViewController.xib; sourceTree = "<group>"; };
-		83EB36242ACFB375000F29FB /* RuleSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RuleSettingsViewController.swift; sourceTree = "<group>"; };
-		83EB36262ACFB386000F29FB /* ShortcutSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortcutSettingsViewController.swift; sourceTree = "<group>"; };
-		83EB36272ACFB386000F29FB /* ShortcutSettingsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShortcutSettingsViewController.xib; sourceTree = "<group>"; };
 		83FC2F4F2AD640CC00A3065E /* DictionaryType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryType.swift; sourceTree = "<group>"; };
 		83FC2F552AD642DE00A3065E /* DefaultsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultsManager.swift; sourceTree = "<group>"; };
+		83FC2F752AD7867000A3065E /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		83FC2F762AD7867000A3065E /* SettingsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +44,6 @@
 			files = (
 				83A532562ACEA925003B17EF /* KeyboardShortcuts in Frameworks */,
 				83FC2F532AD642CD00A3065E /* SwiftyUserDefaults in Frameworks */,
-				834E15962ACEB670003CE3B8 /* Settings in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,13 +53,8 @@
 		834E15972ACEB680003CE3B8 /* Settings */ = {
 			isa = PBXGroup;
 			children = (
-				834E15982ACEB687003CE3B8 /* Settings+.swift */,
-				83C8BD5F2ACFA2B60096EF70 /* GeneralSettingsViewController.xib */,
-				83C8BD612ACFA2DE0096EF70 /* GeneralSettingsViewController.swift */,
-				83EB36272ACFB386000F29FB /* ShortcutSettingsViewController.xib */,
-				83EB36262ACFB386000F29FB /* ShortcutSettingsViewController.swift */,
-				83EB36222ACFB36B000F29FB /* RuleSettingsViewController.xib */,
-				83EB36242ACFB375000F29FB /* RuleSettingsViewController.swift */,
+				83FC2F762AD7867000A3065E /* SettingsViewController.xib */,
+				83FC2F752AD7867000A3065E /* SettingsViewController.swift */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
@@ -160,7 +143,6 @@
 			name = ClipboardManager;
 			packageProductDependencies = (
 				83A532552ACEA925003B17EF /* KeyboardShortcuts */,
-				834E15952ACEB670003CE3B8 /* Settings */,
 				83FC2F522AD642CD00A3065E /* SwiftyUserDefaults */,
 			);
 			productName = ClipboardManager;
@@ -193,7 +175,6 @@
 			mainGroup = 83A532392ACEA2BC003B17EF;
 			packageReferences = (
 				83A532542ACEA925003B17EF /* XCRemoteSwiftPackageReference "KeyboardShortcuts" */,
-				834E15942ACEB670003CE3B8 /* XCRemoteSwiftPackageReference "Settings" */,
 				83FC2F512AD642CD00A3065E /* XCRemoteSwiftPackageReference "SwiftyUserDefaults" */,
 			);
 			productRefGroup = 83A532432ACEA2BC003B17EF /* Products */;
@@ -211,11 +192,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				833DE34D2ACFA59000B4A546 /* AppDelegate.xib in Resources */,
-				83C8BD602ACFA2B60096EF70 /* GeneralSettingsViewController.xib in Resources */,
-				83EB36292ACFB386000F29FB /* ShortcutSettingsViewController.xib in Resources */,
 				83A5324A2ACEA2BD003B17EF /* Assets.xcassets in Resources */,
-				83EB36232ACFB36B000F29FB /* RuleSettingsViewController.xib in Resources */,
 				830A54C32AD54A0C00801DB7 /* PopupViewController.xib in Resources */,
+				83FC2F782AD7867000A3065E /* SettingsViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -226,15 +205,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				83EB36252ACFB375000F29FB /* RuleSettingsViewController.swift in Sources */,
 				83A532462ACEA2BC003B17EF /* AppDelegate.swift in Sources */,
-				834E15992ACEB687003CE3B8 /* Settings+.swift in Sources */,
-				83EB36282ACFB386000F29FB /* ShortcutSettingsViewController.swift in Sources */,
-				83C8BD622ACFA2DE0096EF70 /* GeneralSettingsViewController.swift in Sources */,
 				83FC2F562AD642DE00A3065E /* DefaultsManager.swift in Sources */,
 				83A532592ACEA952003B17EF /* KeyboardShortcuts+.swift in Sources */,
 				834B03FE2AD53C2C000FC8C9 /* PopupViewController.swift in Sources */,
 				83FC2F502AD640CC00A3065E /* DictionaryType.swift in Sources */,
+				83FC2F772AD7867000A3065E /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -439,14 +415,6 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		834E15942ACEB670003CE3B8 /* XCRemoteSwiftPackageReference "Settings" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/sindresorhus/Settings";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 3.0.3;
-			};
-		};
 		83A532542ACEA925003B17EF /* XCRemoteSwiftPackageReference "KeyboardShortcuts" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/sindresorhus/KeyboardShortcuts";
@@ -466,11 +434,6 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		834E15952ACEB670003CE3B8 /* Settings */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 834E15942ACEB670003CE3B8 /* XCRemoteSwiftPackageReference "Settings" */;
-			productName = Settings;
-		};
 		83A532552ACEA925003B17EF /* KeyboardShortcuts */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 83A532542ACEA925003B17EF /* XCRemoteSwiftPackageReference "KeyboardShortcuts" */;
