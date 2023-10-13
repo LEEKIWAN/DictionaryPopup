@@ -7,14 +7,17 @@
 
 import Cocoa
 import KeyboardShortcuts
-import ServiceManagement
 import SwiftyUserDefaults
+import LaunchAtLogin
 
 class SettingsViewController: NSWindowController {
 
     @IBOutlet weak var popupContainerView: NSView!
 
+    @IBOutlet weak var launchAtLoginButton: NSButton!
     @IBOutlet weak var textField: NSTextField!
+    
+    
     private let popupRecorder = KeyboardShortcuts.RecorderCocoa(for: .popup)
 
     override func windowDidLoad() {
@@ -24,20 +27,21 @@ class SettingsViewController: NSWindowController {
         popupContainerView.addSubview(popupRecorder)
         popupRecorder.frame = popupContainerView.bounds
         
-        print("windowDidLoad")
+        updateStates()
     }
     
     
     
+    func updateStates() {
+        launchAtLoginButton.state = LaunchAtLogin.isEnabled ? .on : .off
+        textField.stringValue = Defaults.customUrl
+    }
+    
+    
     @IBAction func onAutoStartCheckChanged(_ sender: NSButton) {        
-        var isAutoLaunchEnabled = sender.state == .on
+        let isEnabled = sender.state == .on
         
-        let launcherAppIdentifier = "kr.xoul.allkdic.LauncherApplication"
-        SMLoginItemSetEnabled(launcherAppIdentifier as CFString, isAutoLaunchEnabled)
-        
-        print(isAutoLaunchEnabled)
-        
-        Defaults.isAutoLaunchEnabled = isAutoLaunchEnabled
+        LaunchAtLogin.isEnabled = isEnabled
     }
     
     
@@ -46,6 +50,7 @@ class SettingsViewController: NSWindowController {
 extension SettingsViewController: NSControlTextEditingDelegate {
 //    textfield
     func controlTextDidChange(_ obj: Notification) {
-        print(textField.stringValue)
+        
+        Defaults.customUrl = textField.stringValue
     }
 }

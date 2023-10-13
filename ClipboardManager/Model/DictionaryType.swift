@@ -8,6 +8,7 @@
 import Foundation
 import SwiftyUserDefaults
 
+
 enum DictionaryType: String, CaseIterable, DefaultsSerializable {
     
     case naver
@@ -19,7 +20,7 @@ enum DictionaryType: String, CaseIterable, DefaultsSerializable {
         switch self {
         case .naver: return "http://endic.naver.com/popManager.nhn?m=miniPopMain"
         case .daum: return "http://small.dic.daum.net/"
-        case .custom: return "http://m.dic.naver.com/"
+        case .custom: return Defaults.customUrl
         }
     }
     

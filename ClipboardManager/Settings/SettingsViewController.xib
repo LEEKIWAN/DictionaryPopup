@@ -7,6 +7,7 @@
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="SettingsViewController" customModule="ClipboardManager" customModuleProvider="target">
             <connections>
+                <outlet property="launchAtLoginButton" destination="Q3i-zE-Eum" id="uPP-dc-S1r"/>
                 <outlet property="popupContainerView" destination="lBn-6E-FQG" id="iED-kp-21S"/>
                 <outlet property="textField" destination="8da-3p-byP" id="xDZ-WA-Ga3"/>
                 <outlet property="window" destination="F0z-JX-Cv5" id="gIp-Ho-8D9"/>
@@ -17,14 +18,14 @@
         <window title="환경설정" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" restorable="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="F0z-JX-Cv5">
             <windowStyleMask key="styleMask" titled="YES" closable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-            <rect key="contentRect" x="196" y="240" width="480" height="270"/>
+            <rect key="contentRect" x="196" y="240" width="529" height="320"/>
             <rect key="screenRect" x="0.0" y="0.0" width="3008" height="1667"/>
             <view key="contentView" id="se5-gp-TjO">
-                <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                <rect key="frame" x="0.0" y="0.0" width="529" height="320"/>
                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                 <subviews>
                     <gridView xPlacement="leading" yPlacement="bottom" rowAlignment="none" translatesAutoresizingMaskIntoConstraints="NO" id="hc1-Bq-xjR">
-                        <rect key="frame" x="103" y="83" width="274" height="104"/>
+                        <rect key="frame" x="128" y="108" width="274" height="104"/>
                         <rows>
                             <gridRow yPlacement="center" bottomPadding="10" id="Uf6-HJ-GFc"/>
                             <gridRow yPlacement="center" bottomPadding="10" id="k8G-Qk-N8F"/>
@@ -103,7 +104,7 @@
             <connections>
                 <outlet property="delegate" destination="-2" id="0bl-1N-AYu"/>
             </connections>
-            <point key="canvasLocation" x="139" y="-46"/>
+            <point key="canvasLocation" x="163.5" y="-21"/>
         </window>
     </objects>
 </document>

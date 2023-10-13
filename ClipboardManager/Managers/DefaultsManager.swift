@@ -11,7 +11,6 @@ import SwiftyUserDefaults
 extension DefaultsKeys {
     var dictinoaryType: DefaultsKey<DictionaryType> { .init("dictinoaryType", defaultValue: .naver) }
     
-    var isAutoLaunchEnabled: DefaultsKey<Bool> { .init("isAutoLaunchEnabled", defaultValue: false) }
-    
+    var customUrl: DefaultsKey<String> { .init("customUrl", defaultValue: "http://m.dic.naver.com/") }
 }
 

@@ -10,6 +10,7 @@
 		830A54C32AD54A0C00801DB7 /* PopupViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 830A54C22AD54A0C00801DB7 /* PopupViewController.xib */; };
 		833DE34D2ACFA59000B4A546 /* AppDelegate.xib in Resources */ = {isa = PBXBuildFile; fileRef = 833DE34C2ACFA59000B4A546 /* AppDelegate.xib */; };
 		834B03FE2AD53C2C000FC8C9 /* PopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834B03FD2AD53C2C000FC8C9 /* PopupViewController.swift */; };
+		837E7C132AD7DFFE00D0B1C5 /* LaunchAtLogin in Frameworks */ = {isa = PBXBuildFile; productRef = 837E7C122AD7DFFE00D0B1C5 /* LaunchAtLogin */; };
 		83A532462ACEA2BC003B17EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A532452ACEA2BC003B17EF /* AppDelegate.swift */; };
 		83A5324A2ACEA2BD003B17EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83A532492ACEA2BD003B17EF /* Assets.xcassets */; };
 		83A532562ACEA925003B17EF /* KeyboardShortcuts in Frameworks */ = {isa = PBXBuildFile; productRef = 83A532552ACEA925003B17EF /* KeyboardShortcuts */; };
@@ -42,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				837E7C132AD7DFFE00D0B1C5 /* LaunchAtLogin in Frameworks */,
 				83A532562ACEA925003B17EF /* KeyboardShortcuts in Frameworks */,
 				83FC2F532AD642CD00A3065E /* SwiftyUserDefaults in Frameworks */,
 			);
@@ -144,6 +146,7 @@
 			packageProductDependencies = (
 				83A532552ACEA925003B17EF /* KeyboardShortcuts */,
 				83FC2F522AD642CD00A3065E /* SwiftyUserDefaults */,
+				837E7C122AD7DFFE00D0B1C5 /* LaunchAtLogin */,
 			);
 			productName = ClipboardManager;
 			productReference = 83A532422ACEA2BC003B17EF /* ClipboardManager.app */;
@@ -176,6 +179,7 @@
 			packageReferences = (
 				83A532542ACEA925003B17EF /* XCRemoteSwiftPackageReference "KeyboardShortcuts" */,
 				83FC2F512AD642CD00A3065E /* XCRemoteSwiftPackageReference "SwiftyUserDefaults" */,
+				837E7C112AD7DFFE00D0B1C5 /* XCRemoteSwiftPackageReference "LaunchAtLogin" */,
 			);
 			productRefGroup = 83A532432ACEA2BC003B17EF /* Products */;
 			projectDirPath = "";
@@ -415,6 +419,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		837E7C112AD7DFFE00D0B1C5 /* XCRemoteSwiftPackageReference "LaunchAtLogin" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sindresorhus/LaunchAtLogin";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
 		83A532542ACEA925003B17EF /* XCRemoteSwiftPackageReference "KeyboardShortcuts" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/sindresorhus/KeyboardShortcuts";
@@ -434,6 +446,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		837E7C122AD7DFFE00D0B1C5 /* LaunchAtLogin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 837E7C112AD7DFFE00D0B1C5 /* XCRemoteSwiftPackageReference "LaunchAtLogin" */;
+			productName = LaunchAtLogin;
+		};
 		83A532552ACEA925003B17EF /* KeyboardShortcuts */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 83A532542ACEA925003B17EF /* XCRemoteSwiftPackageReference "KeyboardShortcuts" */;
